@@ -1,0 +1,269 @@
+# Polkadot x EasyA Harvard Hackathon
+
+*Everything you need to know!*
+
+> Table of Content
+> 
+
+[Schedule](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[Food](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[Prizes](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[Judging](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[How to submit your project](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[FAQs](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[Social Links](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+[Contact us](https://www.notion.so/Polkadot-x-EasyA-Harvard-Hackathon-1d5bf8719d6d800da2c8ea5efaf44ba4?pvs=21)
+
+Welcome, Teams! 👋
+
+We’re back at Harvard! Where so many of the world’s most most valuable startups were created. From the dorm rooms to the lecture halls, code that billions of people use every day was written here. And now, it’s your turn to build the future.
+
+This April we’re bringing you the [Polkadot](https://polkadot.network/) x [EasyA](https://www.easya.io/) Hackathon in partnership with Harvard Blockchain Research Labs and the Harvard undergraduate Blockchain Club for what’s shaping up to be one of the biggest hackathons of the year! We're giving away $20,000 in no-strings-attached prize money, and a further $85,000 in additional funding to help you continue building! All to the best ideas and projects built at this hackathon. In just 36 hours, you could walk away with a huge prize and be on your way to launching the world's next unicorn!
+
+Together with the Polkadot ecosystem, we’ve been working non-stop to bring you this once in a lifetime opportunity and we can’t wait to welcome you to one of our most hyped hackathons yet this April 26-27! 😎
+
+We put this doc together to answer all the questions hackers typically have in the run up to our hackathons, but if there’s anything else you want to ask just ping us (hello@easya.io)!
+
+See you soon!
+
+*Phil, Dom, and the EasyA + Polkadot Ecosystem Team*
+
+> App ****
+> 
+> 
+> [Download the EasyA App here to for your Duolingo-style crash course on Polkadot and earn swag.](https://links.easya.io/links/notion)
+> 
+
+> Twitter ****
+> 
+> 
+> [Follow us on Twitter to get hackathon updates (prize announcements etc) first!](https://twitter.com/easya_app)
+> 
+
+> **Venue, Check-In, Hacking Hours**
+> 
+- **VENUE** | North Building, 52 Oxford Street Cambridge, MA 02138 United States
+- Make sure you have your Eventbrite ticket ready to show security!
+
+https://www.google.com/maps?client=safari&sca_esv=bfd7f0276b7e69c9&output=search&q=Northwest+Building++52+Oxford+Street+Cambridge,+MA+02138+United+States&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpIgVFCTcbZI9VMGzNoV0iOTPryHVyOUisUiQWwjZrW-zxZQIG5sJB7n-SeI02-dWcMoUvQsRGsWHmo9pNOl1-ClGbxjO1jJnxztwUXH7AuAWi02sTdoYdAcKMbTRsjMUhIegLJVZjc5hV4Qa8ojLXt30WNY5KSg8PXY5cdcyDJyfaD3PsMVvW99VECDmucsHXzVsMWw&entry=mc&ved=1t:200715&ictx=111
+
+- **CHECKING IN**
+    - **What do I bring?**
+        - Your Eventbrite ticket (to show security). Need to sign up? [Register here](https://easya-polkadot-hack-harvard.eventbrite.co.uk).
+        - Your laptop (and charger!).
+- **HACKING HOURS** | The venue will be open from Saturday at 8:00am. You’re welcome to come and go as you please, and we will officially close at 6PM on Sunday.
+- **SWAG (exclusive T-shirts and merch)** | Arrive early for an exclusive swag pack. The first 50 attendees to show up early on Saturday morning will get exclusive swag - guaranteed. Don’t be late
+
+> Schedule
+> 
+
+[Untitled](https://www.notion.so/1d5bf8719d6d81f18ce6c953c3b32480?pvs=21)
+
+> **Getting help**
+> 
+
+Polkadot experts will be available throughout the weekend, so if you have any questions feel free to ask them for help! (You’ll find them at their mentor table).
+
+> **Food**
+> 
+
+**Breakfast, lunch and dinner** will be provided on Saturday, with breakfast and lunch on Sunday (since you’ll be gone by dinner)!
+
+**Snacks** — Tons of snacks will be available for you on both days. We’ll also have a full stock of drinks. We’ve got you!
+
+> **Prize Breakdown 💰**
+> 
+
+Wondering which challenges you want to enter for? Here’s the breakdown for our Polkadot hackathon coding and no-code tracks (yes, we have prizes for non-coders too!):
+
+|  | **Polkadot New Projects (Coding Track)** | **Polkadot Existing Projects (Coding Track)** | **Pitchathon (No-Code Track)** |
+| --- | --- | --- | --- |
+| **Total Prize Money 🏆** | $9,000 | $9,000 | $2,000 |
+| **First Prize 🥇** | $5,000 | $5,000 | $1,000 |
+| **Second Prize 🥈** | $3,000 | $3,000 | $750 |
+| **Third Prize 🥉** | $1,000 | $1,000 | $250 |
+| **Guaranteed Prize*** | $400 | $400 | N/A |
+| **Problem statement** | This is an open track. **You can build anything, as long as you use smart contracts on Polkadot Asset Hub.** 
+
+In particular, we’re most excited about
+
+- DeFi (Decentralised Finance)
+
+- Gaming | **Continue building your past Polkadot hackathon project!** 
+
+If you came to one of our previous Polkadot hackathons, you can continue building your project! 
+
+To be eligible for this track, you must build in the same GitHub repo you built on at the previous hackathon. 
+
+Bonus points if you have a great landing page, showing your roadmap and progress you’ve made since the previous hackathon. 
+
+For reference, here’s one of the winning projects from our Polkadot hackathon last year! https://github.com/jjjutla/melodot
+
+You must build your project’s smart contracts on Polkadot Asset Hub. | **Pitch your vision for a financial app or game built on Polkadot**
+
+Deep understanding of how Polkadot works will be rewarded most highly (no code required).
+
+Bonus points for building in the open and posting about your project via Twitter. See how many followers you can get for your project over the weekend! |
+| **Developer Resources** | [How to build a smart contract for Polkadot](https://contracts.polkadot.io)
+
+[Polkadot Hackathon Cheat Sheet](https://github.com/polkadot-developers/hackathon-guide)
+
+[Download the EasyA App here and complete the Polkadot challenges to learn everything you need to start building](https://links.easya.io/links/iTLY)
+
+[Polkadot AI VSCode extension](https://dappforge.app) | [How to build a smart contract for Polkadot](https://contracts.polkadot.io)
+
+[Polkadot Hackathon Cheat Sheet](https://github.com/polkadot-developers/hackathon-guide)
+
+[Download the EasyA App here and complete the Polkadot challenges to learn everything you need to start building](https://links.easya.io/links/iTLY)
+
+[Polkadot AI VSCode extension](https://dappforge.app) | **You must attend** all the in-person workshops in the schedule to be eligible to enter this track. |
+
+*The guaranteed prize means your team’s guaranteed to go home with $400 if you don’t win one of the main prizes but do successfully submit a valid project (i.e. that satisfies the judging criteria and submission requirements) in-person for one of the coding tracks and have completed all the Polkadot challenges in the EasyA app! This guaranteed prize is fixed at $400 for all the tracks. In other words, you won’t get $800 for submitting for 2 tracks - nice try though! Please note that you may also only be part of one team (no spinning up multiple teams to try and game the system)!
+
+Don’t forget, the above is $20,000 of actual prize money - it’s not just ‘worth of prizes’. So you can spend it on whatever you want! A new Mac for compiling those smart contracts, a server for running Polkadot infrastructure, or whatever you want!
+
+> **Judging** (don’t worry - it’s not scary at all! 😄)
+> 
+- **WHEN** | Demo day will be on Sunday (see schedule for precise timings).
+- **HOW** | Judging will be done in person on Sunday. If you entered the coding track, there are 2 phases of judging. First, you’ll show your project to the judges at their judging table (this is an informal opportunity for you to show your code to them). Second, **top projects will then be selected to present formally to everyone on stage!** If you entered the no-code track, your project submission will be reviewed by the judges separately before the top ones get selected to present on stage (there’s no need to show your project to the judges at their judging table)!
+- **PRESENTING (TECHNICAL TRACK)** | If you’re selected to present for the technical tracks, here’s how it will go:
+    - 20 seconds to connect your computer to the projector.
+    - 3 mins to present.
+    - 1 min for Q&A.
+
+If you go over time, points will be deducted from your team. Your time will start as soon as the last team has stopped presenting and has left the stage.
+
+- **PRESENTING (NON-TECHNICAL TRACK)** | If you’re presenting for the non-technical track, here’s how it will go:
+    - 2 mins to present (no Q&A)
+
+If you go over time, points will be deducted from your team.
+
+- **PRESENTING STRUCTURE** | Follow this structure when presenting:
+    1. First 30 seconds for each team member to introduce yourselves (which employer/university you’re from, which year, what you’re majoring in etc). **Make sure you have a team slide!**
+    2. Next 30 seconds to explain the problem you’re solving
+    3. Next 30 seconds to explain your solution and grand vision - show off how big this can get
+    4. Next 30 seconds showing off your demo - show off how much you achieved!
+    5. Next 30 seconds explaining how you used Polkadot in your project
+    6. Final 30 seconds on future roadmap and what you’ll do next
+- **Criteria** | Submissions will be judged by Polkadot ecosystem / EasyA representatives based on their technical merits as well as the quality of presentation.
+
+**Submissions will be graded on a 1-10 scale in each of the following categories:**
+
+- Innovation and Originality: The novelty of the solution and its potential to disrupt or significantly improve upon existing services.
+- Usability and Design: The application's user experience and interface design, ensuring accessibility and ease of use for its intended audience.
+- Impact Potential: The applicability and scalability of the solution in real-world scenarios, including its potential for adoption and the breadth of its impact on the target market or sector.
+- Feasibility: The practicality of implementing the solution and the clarity of the implementation plan.
+- Use of the Blockchain: Effective use of smart contracts on Polkadot Asset Hub in the solution, demonstrating an understanding of their benefits and limitations.
+- (For coding submissions) Technical Implementation: The robustness, security, and efficiency of the application’s codebase. Proper use of smart contracts and adherence to best practices in dApp development will be crucial. You must have built your own smart contract on Polkadot Asset Hub. Simply copy/pasting from another pre-existing project will not satisfy the criteria.
+
+> **How to submit your project 🚀**
+> 
+
+Simply complete this submission form: https://forms.gle/jyinTU8TPmGZdY137 
+
+> **Submission requirements ✅**
+> 
+
+**Projects must:**
+
+1. Be built with smart contracts on Polkadot Asset Hub 
+2. Be open source (and remain available as open source)
+3. Include a short summary (<150 chars)
+4. Include a full description (the problems it solves, how Polkadot was used to achieve it)
+5. Include a technical description (what SDKs were used, and what features of Polkadot made this uniquely possible)
+6. Include a link to the Canva slides used in the presentation (including a slide on your team, problem, solution etc). You must use Canva for your presentation (yes, this is a requirement).
+7. (For coding submissions) Have a custom (not boilerplate) smart contract on Polkadot Asset Hub (and committed to your GitHub repo). All of this must be fully-functioning, as evidenced in a demo video on your README (see point 8 below).
+8. (For coding submissions) Include a clear README on your GitHub repo explaining how your project works. This README must include:
+    1. A demo video
+    2. Screenshots of your UI
+    3. Description of how your smart contract works
+    4. A video with audio (e.g. a Loom video [like this](https://youtu.be/ZLKR4zE1o6U?si=6na7139wlVNkmJRa)) explaining how your project works, how the GitHub repo is structured, a demo of everything working etc. This is vital, so that the judges can review your project properly. Make sure you explain clearly how you satisfied point 7 above. This is a great example of a winning Polkadot project’s README: https://github.com/jjjutla/melodot. Bonus points for if your video is well-edited!
+    5. Block explorer link for deployed smart contract on Asset Hub
+
+Please make sure you follow the above requirements very carefully. If you do not satisfy them, you will not be eligible for a guaranteed prize.
+
+> **FAQs**
+> 
+- **Do I need to bring my computer?**
+
+Yep - how else will you make your slides or code?
+
+- **Do I need to stay for the whole time?**
+
+Nope! Most people will stay for the whole time, but you’re free to leave and come back whenever you want. Remember - if you’re competing for the non-code challenge, you’ll need to *attend all the workshops in-person* to be eligible to win a prize.
+
+- **Can I go for all the different prize challenges?**
+
+You may enter one of the coding tracks. You can’t enter for both no-code tracks and the coding tracks.
+
+- **Do I need to be an expert in blockchain?**
+
+Nope - this hackathon is open to beginners too! We have experts available to help 24/7, and lots of beginner teams have actually ended up winning before!
+
+- **Will there be vegan and gluten-free food?**
+
+We’ve got you covered! We’ll have plenty of vegan and gluten-free food for you!
+
+- **What should team sizes be?**
+
+1-5 people per team. You can also enter solo, but 5 is the maximum number per team. If you have over 5 people in your team, split up into more than one team (and go for multiple challenges)!
+
+- **Can I participate without coding?**
+
+Yes! If you’re a non-coder you can participate in tons of ways! You can join a non-technical team to help them (e.g. making the presentation, helping with ideas, or with their economic models). Or you can just enter the no-code track!
+
+- **Are there any requirements for the non-technical track?**
+
+You can get as creative as you want. However, you must attend all the workshops in person so you can a full picture of the problems the technology helps solve. Don’t worry if you don’t understand all of it - we just want you to have a rough idea of what the overall problems and solutions are so you can incorporate them into your presentations!
+
+> **Follow us on Socials**
+> 
+
+EasyA Twitter -
+
+[https://x.com/easya_app](https://twitter.com/easya_app)
+
+EasyA Linkedin - 
+
+https://www.linkedin.com/company/easya 
+
+Polkadot Twitter - 
+
+https://x.com/Polkadot 
+
+> **Get in touch!**
+> 
+
+We’ll be answering questions throughout the weekend, and will be communicating updates via the Telegram group chat here, so make sure you join it!
+
+**1. Join the EasyA OGs telegram group here!** https://t.me/+vUvxQSPm8rljNjM0
+
+**2. Enter the Polkadot channel:** https://t.me/c/1781290310/2963
+
+Just make sure you’re in the Polkadot channel, which is specifically for this hackathon!
+
+See you there! 👋
+
+> **Give feedback on the smart contracts!**
+> 
+
+Polkadot would love to hear what you think of smart contracts on Asset Hub! Share your thoughts here! https://docs.google.com/forms/d/e/1FAIpQLSfhsQkbfIwOWHA6tsLzGVjQMVQ8dnrhNJ0wkhpWFBx-JKbf1A/viewform 
+
+**Rules:**
+
+1. Don’t start coding your project before the hackathon officially starts. You can obviously start researching or learning how to use the tools you’ll need, but you must not start coding the project you intend to submit.
+2. If you want to use pre-existing code (e.g. from a prior project you’ve made) you must notify us first in writing, with a detailed explanation of which parts you’ll be re-using. You are of course allowed to fork projects (rather than reinventing the wheel). However, your hackathon submission will be judges solely on the merits of what you have achieved during the time of the hackathon itself. If during or after the event we find that you failed to disclose that you used pre-existing code, you will be subject to disqualification. 
+3. Guaranteed prizes will be awarded at EasyA’s sole discretion. 
+4. Your project must remain open source and available on the Github repo you submit.
+5. All participants are expected to adhere to the following principles:
+    1. Integrity: Maintain honesty and transparency in all aspects of the competition. Usage of AI tools is permitted. Ensure that your submission consists of citations, references, and code attributions.
+    2. Respect: Treat all participants, mentors, and organizers respectfully and courteously.
+
+[Schedule + Workshops 📆 ](https://www.notion.so/1d5bf8719d6d817bb004f943a8a4f536?pvs=21)

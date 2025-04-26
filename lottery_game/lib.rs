@@ -1,141 +1,142 @@
-#![cfg_attr(not(feature = "std"), no_std, no_main)]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 #[ink::contract]
-mod lottery_game {
+mod luckydot {
+    use ink::prelude::vec::Vec;
+    use ink::storage::Mapping;
+    use ink::env::hash::{Blake2x256, HashOutput};
 
-    /// Defines the storage of your contract.
-    /// Add new fields to the below struct in order
-    /// to add new static storage fields to your contract.
     #[ink(storage)]
-    pub struct LotteryGame {
-        /// Stores a single `bool` value on the storage.
-        value: bool,
+    pub struct LuckyDot {
+        tickets: Mapping<AccountId, Vec<Ticket>>,
+        prize_pool: Balance,
+        ticket_price: Balance,
+        admin: AccountId,
     }
 
-    impl LotteryGame {
-        /// Constructor that initializes the `bool` value to the given `init_value`.
+    #[derive(scale::Encode, scale::Decode, Clone, PartialEq, Eq, Debug)]
+    #[cfg_attr(feature = "std", derive(scale_info::TypeInfo))]
+    pub struct Ticket {
+        id: u64,
+        scratched: bool,
+        symbols: [u8; 3], // 0:🍒 1:🍀 2:💎 3:🍋
+        prize_multiplier: u8, // 0 = no win, 1 = small win, 2 = big win
+    }
+
+    impl LuckyDot {
         #[ink(constructor)]
-        pub fn new(init_value: bool) -> Self {
-            Self { value: init_value }
+        pub fn new(ticket_price: Balance) -> Self {
+            let caller = Self::env().caller();
+            Self {
+                tickets: Mapping::default(),
+                prize_pool: 0,
+                ticket_price,
+                admin: caller,
+            }
         }
 
-        /// Constructor that initializes the `bool` value to `false`.
-        ///
-        /// Constructors can delegate to other constructors.
-        #[ink(constructor)]
-        pub fn default() -> Self {
-            Self::new(Default::default())
-        }
+        #[ink(message, payable)]
+        pub fn buy_ticket(&mut self) -> Result<(), String> {
+            let caller = self.env().caller();
+            let value = self.env().transferred_value();
+            if value < self.ticket_price {
+                return Err(String::from("Insufficient payment"));
+            }
 
-        /// A message that can be called on instantiated contracts.
-        /// This one flips the value of the stored `bool` from `true`
-        /// to `false` and vice versa.
-        #[ink(message)]
-        pub fn flip(&mut self) {
-            self.value = !self.value;
-        }
+            let block_hash = self.env().block_hash(self.env().block_number());
+            let mut rng = <Blake2x256 as HashOutput>::Type::default();
+            ink::env::hash_bytes::<Blake2x256>(&block_hash, &mut rng);
 
-        /// Simply returns the current value of our `bool`.
-        #[ink(message)]
-        pub fn get(&self) -> bool {
-            self.value
-        }
-    }
+            let symbols = [
+                rng[0] % 4, // 4 different symbols
+                rng[1] % 4,
+                rng[2] % 4,
+            ];
 
-    /// Unit tests in Rust are normally defined within such a `#[cfg(test)]`
-    /// module and test functions are marked with a `#[test]` attribute.
-    /// The below code is technically just normal Rust code.
-    #[cfg(test)]
-    mod tests {
-        /// Imports all the definitions from the outer scope so we can use them here.
-        use super::*;
+            let ticket_id = self.env().block_number() as u64 + value as u64;
 
-        /// We test if the default constructor does its job.
-        #[ink::test]
-        fn default_works() {
-            let lottery_game = LotteryGame::default();
-            assert_eq!(lottery_game.get(), false);
-        }
+            let ticket = Ticket {
+                id: ticket_id,
+                scratched: false,
+                symbols,
+                prize_multiplier: 0, // not scratched yet
+            };
 
-        /// We test a simple use case of our contract.
-        #[ink::test]
-        fn it_works() {
-            let mut lottery_game = LotteryGame::new(false);
-            assert_eq!(lottery_game.get(), false);
-            lottery_game.flip();
-            assert_eq!(lottery_game.get(), true);
-        }
-    }
+            let mut user_tickets = self.tickets.get(&caller).unwrap_or_default();
+            user_tickets.push(ticket);
+            self.tickets.insert(caller, &user_tickets);
 
-
-    /// This is how you'd write end-to-end (E2E) or integration tests for ink! contracts.
-    ///
-    /// When running these you need to make sure that you:
-    /// - Compile the tests with the `e2e-tests` feature flag enabled (`--features e2e-tests`)
-    /// - Are running a Substrate node which contains `pallet-contracts` in the background
-    #[cfg(all(test, feature = "e2e-tests"))]
-    mod e2e_tests {
-        /// Imports all the definitions from the outer scope so we can use them here.
-        use super::*;
-
-        /// A helper function used for calling contract messages.
-        use ink_e2e::ContractsBackend;
-
-        /// The End-to-End test `Result` type.
-        type E2EResult<T> = std::result::Result<T, Box<dyn std::error::Error>>;
-
-        /// We test that we can upload and instantiate the contract using its default constructor.
-        #[ink_e2e::test]
-        async fn default_works(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
-            // Given
-            let mut constructor = LotteryGameRef::default();
-
-            // When
-            let contract = client
-                .instantiate("lottery_game", &ink_e2e::alice(), &mut constructor)
-                .submit()
-                .await
-                .expect("instantiate failed");
-            let call_builder = contract.call_builder::<LotteryGame>();
-
-            // Then
-            let get = call_builder.get();
-            let get_result = client.call(&ink_e2e::alice(), &get).dry_run().await?;
-            assert!(matches!(get_result.return_value(), false));
+            self.prize_pool += value;
 
             Ok(())
         }
 
-        /// We test that we can read and write a value from the on-chain contract.
-        #[ink_e2e::test]
-        async fn it_works(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
-            // Given
-            let mut constructor = LotteryGameRef::new(false);
-            let contract = client
-                .instantiate("lottery_game", &ink_e2e::bob(), &mut constructor)
-                .submit()
-                .await
-                .expect("instantiate failed");
-            let mut call_builder = contract.call_builder::<LotteryGame>();
+        #[ink(message)]
+        pub fn scratch_ticket(&mut self, ticket_id: u64) -> Result<[u8; 3], String> {
+            let caller = self.env().caller();
+            let mut user_tickets = self.tickets.get(&caller).ok_or("No tickets found")?;
 
-            let get = call_builder.get();
-            let get_result = client.call(&ink_e2e::bob(), &get).dry_run().await?;
-            assert!(matches!(get_result.return_value(), false));
+            for ticket in user_tickets.iter_mut() {
+                if ticket.id == ticket_id {
+                    if ticket.scratched {
+                        return Err(String::from("Ticket already scratched"));
+                    }
 
-            // When
-            let flip = call_builder.flip();
-            let _flip_result = client
-                .call(&ink_e2e::bob(), &flip)
-                .submit()
-                .await
-                .expect("flip failed");
+                    let prize = Self::calculate_prize(ticket.symbols);
+                    ticket.prize_multiplier = prize;
+                    ticket.scratched = true;
 
-            // Then
-            let get = call_builder.get();
-            let get_result = client.call(&ink_e2e::bob(), &get).dry_run().await?;
-            assert!(matches!(get_result.return_value(), true));
+                    self.tickets.insert(caller, &user_tickets);
 
-            Ok(())
+                    return Ok(ticket.symbols);
+                }
+            }
+
+            Err(String::from("Ticket not found"))
+        }
+
+        #[ink(message)]
+        pub fn claim_prize(&mut self, ticket_id: u64) -> Result<(), String> {
+            let caller = self.env().caller();
+            let mut user_tickets = self.tickets.get(&caller).ok_or("No tickets found")?;
+
+            for ticket in user_tickets.iter_mut() {
+                if ticket.id == ticket_id {
+                    if !ticket.scratched {
+                        return Err(String::from("Ticket not scratched yet"));
+                    }
+                    if ticket.prize_multiplier == 0 {
+                        return Err(String::from("No prize to claim"));
+                    }
+
+                    let prize_amount = self.ticket_price * ticket.prize_multiplier as u128;
+                    ticket.prize_multiplier = 0; // reset prize to prevent double-claim
+                    self.tickets.insert(caller, &user_tickets);
+
+                    if self.env().transfer(caller, prize_amount).is_err() {
+                        return Err(String::from("Prize transfer failed"));
+                    }
+
+                    return Ok(());
+                }
+            }
+
+            Err(String::from("Ticket not found"))
+        }
+
+        #[ink(message)]
+        pub fn get_tickets(&self, user: AccountId) -> Vec<Ticket> {
+            self.tickets.get(&user).unwrap_or_default()
+        }
+
+        fn calculate_prize(symbols: [u8; 3]) -> u8 {
+            if symbols[0] == symbols[1] && symbols[1] == symbols[2] {
+                2 // Big prize
+            } else if symbols[0] == symbols[1] || symbols[0] == symbols[2] || symbols[1] == symbols[2] {
+                1 // Small prize
+            } else {
+                0 // No prize
+            }
         }
     }
 }
